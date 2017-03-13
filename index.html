@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vidit Gupta </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="aos.js"></script>
+  <link rel="stylesheet" href="css/portfolio.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
+  <script src="js/aos.js"></script>
+</head>
+<body>
+<!--section1-->
+   <div class="section1">
+     <div class="col-xs-12 main_txt" id="typewriter" data-aos="zoom-in">
+     </div>
+        <div class="display_img">
+           <img src="image_src/me.png" class="img hover_effect" data-aos="zoom-in">
+        </div>
+   </div>
+<hr>
+  <div class="flexbox">
+     <div class="blank"></div>
+    <div class="tile1 hover_effect" data-aos="flip-up"><a class="firstlink" href="#skills"><p class="tile_des" data-aos="flip-up" >SKILLS</p></a></div>
+     <div class="blank"></div>
+    <div class="tile2 hover_effect" data-aos="flip-up"><a class="firstlink" href="#projects"><p class="tile_des" data-aos="flip-up" >PROJECTS</p></a></div>
+     <div class="blank"></div>
+    <div class="tile3 hover_effect" data-aos="flip-up"><a class="firstlink" href="#contact"><p class="tile_des" data-aos="flip-up">CONTACT</p></a></div>
+     <div class="blank"></div>
+  </div>
+<hr>
+<!--Section2-->
+  <div class="skills_txt" data-aos="zoom-in" id="skills">
+    Things I am good at
+  </div>
+  <div class="flexbox1">
+    <div class="skills_img">
+      <img src="image_src/pslogo.jpg" class="pslogo" data-aos="fade-up">
+    </div>
+    <div class="skills_img">
+      <img src="image_src/html.png" class="htmllogo" data-aos="fade-up">
+    </div>
+    <div class="skills_img">
+      <img src="image_src/css.png" class="csslogo" data-aos="fade-up">
+    </div>
+    <div class="skills_img">
+      <img src="image_src/js.png" class="jslogo" data-aos="fade-up">
+    </div>
+    <div class="skills_img">
+      <img src="image_src/jq.gif" class="jqlogo" data-aos="fade-up">
+    </div>
+  </div>
+<hr>
+<!--section3-->
+  <div class="project_txt" data-aos="zoom-in" id="projects">
+  Projects I have worked upon
+  </div>
+  <div class="flexbox1">
+    <div class="saral_logo">
+      <a href="http://www.saralerp.com">  <img src="image_src/saral.png" class="sarallogo" data-aos="fade-up"></a>
+    </div>
+    <div class="saral_txt" data-aos="zoom-in">
+      Saral Softech Private Limited<br><br><br>
+      <p class="detail" data-aos="zoom-in">
+       <span class="glyphicon glyphicon-ok" aria-hidden="true" data-aos="zoom-in"></span>  Designed  the company website using Adobe Photoshop and Illustrator.<br>
+       <span class="glyphicon glyphicon-ok" aria-hidden="true" data-aos="zoom-in"></span>  Developing the front-end using HTML5 and CSS3.
+      </p>
+    </div>
+  </div>
+<hr>
+<!--section4-->
+  <div class="contact_txt" data-aos="zoom-in"  id="contact">
+  You can reach me at
+  </div>
+  <div class="flexbox1">
+     <div class="contact_img">
+     <a href="mailto:guptavidit08@gmail.com"><img src="image_src/gmail.png" class="gmail_icon" data-aos="fade-up"></a>
+     </div>
+     <div class="contact_img">
+     <a href="https://www.facebook.com/viditg"><img src="image_src/facebook.png" class="gmail_icon" data-aos="fade-up"></a>
+     </div>
+     <div class="contact_img">
+     <a href="https://www.linkedin.com/in/viditgupta96/"><img src="image_src/linkedin.png" class="gmail_icon" data-aos="fade-up"></a>
+     </div>
+  </div>
+  <div class="cv">
+    <a class="btn btn-primary btn-outline btn-lg custom_btn" data-aos="fade-up">Download CV | 172KB</a>
+  </div>
+<hr>
+  <div class="creation">
+  Made By Vidit Gupta | Based on Bootstrap 3.0
+  </div>
+<script>
+var str = "Hello!<br><br>I am Vidit Gupta.<br><br>A Front-End Web Designer based in Chennai.<br><br>Nice to meet you!<br><br>Scroll down for more...<br><br>",
+    i = 0,
+    isTag,
+    text;
+
+(function type() {
+    text = str.slice(0, ++i);
+    if (text === str) return;
+
+    document.getElementById('typewriter').innerHTML = text;
+
+    var char = text.slice(-1);
+    if( char === '<' ) isTag = true;
+    if( char === '>' ) isTag = false;
+
+    if (isTag) return type();
+    setTimeout(type, 50);
+}());
+</script>
+<script>
+   AOS.init();
+ </script>
+</body>
+</html>
