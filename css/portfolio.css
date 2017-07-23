@@ -5,6 +5,28 @@
     width: 100%;
 }
 
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 60%;
+}
+
+#typed2 {
+    /*width: 60%;*/
+    font-family: 'Arvo', serif;
+    text-align: left;
+    font-size: 24px;
+    height: 150px;
+    padding: 60px;
+    /*width: 60%;*/
+    color: black;
+}
+
+.typed-cursor {
+    display: none;
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -19,9 +41,19 @@ hr {
     font-family: 'Arvo', serif;
     text-align: left;
     font-size: 24px;
-    height: 302px;
-    padding: 80px;
-    width: 60%;
+    height: 310px;
+    padding: 60px;
+    /*width: 60%;*/
+    color: black;
+}
+
+.main_txt2 {
+    font-family: 'Arvo', serif;
+    text-align: left;
+    font-size: 24px;
+    height: 135px;
+    padding: 60px;
+    /*width: 60%;*/
     color: black;
 }
 
