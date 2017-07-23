@@ -303,9 +303,13 @@ a.custom_btn:hover {
         width: 100%;
     }
     .main_txt {
-        height: 425px;
+        height: 280px;
         font-size: 20px;
-        width: 100%;
+        width: 100vw;
+    }
+    #typed2 {
+        width: 100vw;
+        font-size: 20px;
     }
     .display_img {
         display: none;
@@ -370,9 +374,12 @@ a.custom_btn:hover {
 
 @media(min-width:768px) and (max-width:1120px) {
     .main_txt {
-        font-size: 15px;
+        /* font-size: 15px; */
     }
     .custom_btn {
         width: 30%;
+    }
+    .padder {
+        font-size: 24px;
     }
 }
