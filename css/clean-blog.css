@@ -55,6 +55,7 @@ blockquote {
     font-size: 36px;
     font-weight: 700;
     margin-top: 40px;
+    font-style: normal;
 }
 
 .idea_word {
@@ -87,6 +88,7 @@ blockquote {
     color: white;
     background: #0085A1;
     text-shadow: none;
+    i
 }
 
 img::selection {
